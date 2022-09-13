@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <p class="tit" id="dica">Discover the word rule</p>
+    <div class="inputBox">
+      <input type="text" requred="required" id="palavra" />
+      <span id="tents">Answer</span>
+    </div>
+    <div>
+        <a href="#" type="submit" class="button" onclick="Try()" id="try"><span>Try</span><i></i></a>
+        <a href="#" type="submit" class="button" onclick="New()" id="new"><span>New</span><i></i></a>
+    </div>
+    <p id="texto" class="desc">Rules:<br>Try to find the pattern among the hint words.<br>You have 10 tries until you see the answer.<br>There are 3 games. Click "New" to play another rule.</p>
+  </body>
+</html>
