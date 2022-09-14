@@ -29,6 +29,7 @@ body {
 
 .desc {
   font-size: 0.9em;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
   font-style: italic;
