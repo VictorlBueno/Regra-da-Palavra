@@ -1,4 +1,4 @@
-><a href="https://word-rule-game.netlify.app" target="_blank">See this code running on your web</a></br>
+><a href="https://vlb-word-rule-game.netlify.app" target="_blank">See this code running on your web</a></br>
 ><a href="https://github.com/stars/VictorlBueno/lists/back-end" target="_blank">See more Back-end codes</a>
 
 # Word Rule Game 🎮
