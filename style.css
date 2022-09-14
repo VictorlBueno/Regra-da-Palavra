@@ -10,7 +10,7 @@ body {
   background-color: #323e55;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   font-family: 'Roboto', sans-serif;
-  min-height: 95vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
