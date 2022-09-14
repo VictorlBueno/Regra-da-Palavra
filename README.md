@@ -2,6 +2,7 @@
 ><a href="https://github.com/stars/VictorlBueno/lists/back-end" target="_blank">See more Back-end codes</a>
 
 # Word Rule Game 🎮
+<img src="game.png" width="410" align=right>
 How to play:
 <ol>
   <li>Try to find the pattern among the hint words.</lio>
