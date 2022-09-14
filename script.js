@@ -71,7 +71,7 @@ function Try() {
         var firstTry = tries.charAt(0)
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed. Answer: Word starting with the letter 'A'"
+            dicas.innerHTML = "You failed. Answer: Word that starts with the capital letter 'A'"
         }
         else if (firstTry == firstWord) {
             textTip.innerHTML = "Right!"
