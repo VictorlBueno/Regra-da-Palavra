@@ -108,6 +108,7 @@ li {
   margin: 5px;
   color: #e4e6e4;
   transition: 0.5s;
+  float:center;
 }
 
 .try {
@@ -116,7 +117,6 @@ li {
 
 .new {
   padding: 8px 37px;
-  float:inline-end;
 }
 
 .button:hover {
