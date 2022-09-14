@@ -92,8 +92,7 @@ body {
 
 li {
   list-style-type: none;
-  margin-bottom: 20px;
-  display: inline;
+  display: inline-flex;
 }
 
 .try {
@@ -102,7 +101,6 @@ li {
 
 .new {
   padding: 8px 37.1px;
-
 }
 
 .button {
