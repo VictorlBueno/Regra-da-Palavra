@@ -19,6 +19,8 @@ body {
 }
 
 .tit {
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
   color: #fff;
