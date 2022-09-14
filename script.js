@@ -8,13 +8,13 @@ function New() {
     tentat = 0
     var dicas = document.getElementById("dica")
     if (game == 'First') {
-        dicas.innerHTML = 'Type a word (Easy Game)'
+        dicas.innerHTML = 'Easy Game<br>First Tip: Against'
     }
     else if (game == 'Contain') {
-        dicas.innerHTML = 'Type a word (Hard Game)'
+        dicas.innerHTML = 'Hard Game<br>First Tip: Against'
     }
     else {
-        dicas.innerHTML = 'Type a word (Medium Game)'
+        dicas.innerHTML = 'Medium Game<br>First Tip: Against'
     }
 }
 
@@ -39,7 +39,7 @@ function Try() {
         var numTry = tries.length
 
         if (tentat > 10) {
-            dicas.innerHTML = "Answer: Words with 7 letters"
+            dicas.innerHTML = "You failed.<br>Answer: Words with 7 letters"
         }
         else if (numTry == numWord) {
             textTip.innerHTML = "Right!"
@@ -71,7 +71,7 @@ function Try() {
         var firstTry = tries.charAt(0)
 
         if (tentat > 10) {
-            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            dicas.innerHTML = "You failed.<br>Answer: Word that starts with the capital letter 'A'"
         }
         else if (firstTry == firstWord) {
             textTip.innerHTML = "Right!"
@@ -100,7 +100,7 @@ function Try() {
         var letterTry = tries.includes("n")
 
         if (tentat > 10) {
-            dicas.innerHTML = "Answer: Word with the letter 'n'"
+            dicas.innerHTML = "You failed.<br>Answer: Word with the letter 'n'"
         }
         else if (letterTry == letterWord) {
             textTip.innerHTML = "Right!"
