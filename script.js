@@ -39,7 +39,7 @@ function Try() {
         var numTry = tries.length
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed.<br>Answer: Words with 7 letters"
+            dicas.innerHTML = "Answer: Words with 7 letters"
         }
         else if (numTry == numWord || tries.includes("7")) {
             textHint.innerHTML = "Right!"
@@ -71,7 +71,7 @@ function Try() {
         var firstTry = tries.charAt(0)
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed.<br>Answer: Word that starts with the capital letter 'A'"
+            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
         }
         else if (firstTry == firstWord) {
             textHint.innerHTML = "Right!"
@@ -100,7 +100,7 @@ function Try() {
         var letterTry = tries.includes("n")
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed.<br>Answer: Word with the letter 'n'"
+            dicas.innerHTML = "Answer: Word with the letter 'n'"
         }
         else if (letterTry == letterWord) {
             textHint.innerHTML = "Right!"
