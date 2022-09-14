@@ -116,6 +116,7 @@ li {
 
 .new {
   padding: 8px 37px;
+  float:inline-end;
 }
 
 .button:hover {
