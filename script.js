@@ -30,7 +30,7 @@ function Try() {
         var word = ['Ability', 'Against', 'Banking', 'Excited', 'Website', 'Analyst', 'Caliber', 'Circuit', 'Context', 'Compete'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "The tip is " + words
+        var novaDica = "Tip: " + words
         dicas.innerHTML = novaDica
         
         var tries = document.getElementById("palavra").value
@@ -62,7 +62,7 @@ function Try() {
         var word = ['Ambulance', 'Amusement', 'Also', 'Affection', 'Animation', 'Affiliate', 'Afternoon'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "The tip is " + words
+        var novaDica = "Tip: " + words
         dicas.innerHTML = novaDica
 
         var tries = document.getElementById("palavra").value
@@ -91,7 +91,7 @@ function Try() {
         var word = ['Incompatibility', 'Hospitalization', "Introduce", "Classification", 'Generalization', 'Nonsignificant', 'Institutional'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "The tip is " + words
+        var novaDica = "Tip: " + words
         dicas.innerHTML = novaDica
 
         var tries = document.getElementById("palavra").value
