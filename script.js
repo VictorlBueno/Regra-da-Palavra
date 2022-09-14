@@ -39,7 +39,7 @@ function Try() {
         var numTry = tries.length
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed. Answer: The rule is: Words with 7 letters"
+            dicas.innerHTML = "You failed. Answer: Words with 7 letters"
         }
         else if (numTry == numWord) {
             textTip.innerHTML = "Right!"
