@@ -11,7 +11,7 @@ function New() {
         dicas.innerHTML = 'Easy Game<br>Hint: Absence and Account'
     }
     else if (game == 'Contain') {
-        dicas.innerHTML = 'Hard Game<br>Hint: Bearing and Arrival'
+        dicas.innerHTML = 'Hard Game<br>Hint: Bearing and Essence'
     }
     else {
         dicas.innerHTML = 'Medium Game<br>Hint: Drawing and Account'
@@ -38,8 +38,11 @@ function Try() {
         var numWord = words.length
         var numTry = tries.length
 
-        if (tentat > 10) {
-            dicas.innerHTML = "Answer: Words with 7 letters"
+        if (tentat >= 10 && numTry == numWord || tentat >= 10 && tries.includes("7")) {
+            dicas.innerHTML = "You won!"
+        }
+        else if (tentat >= 10 && numTry != numWord) {
+            textHint.innerHTML = "You failed!"
         }
         else if (numTry == numWord || tries.includes("7")) {
             textHint.innerHTML = "Right!"
@@ -70,8 +73,13 @@ function Try() {
         var firstWord = words.charAt(0)
         var firstTry = tries.charAt(0)
 
-        if (tentat > 10) {
+        if (tentat >= 10 && firstTry == firstWord) {
             dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "You won!"
+        }
+        else if (tentat >= 10 && firstTry != firstWord) {
+            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "You failed!"
         }
         else if (firstTry == firstWord) {
             textHint.innerHTML = "Right!"
@@ -99,8 +107,13 @@ function Try() {
         var letterWord = words.includes("n")
         var letterTry = tries.includes("n")
 
-        if (tentat > 10) {
+        if (tentat >= 10 && letterTry == letterWord) {
             dicas.innerHTML = "Answer: Word with the letter 'n'"
+            textHint.innerHTML = "You won!"
+        }
+        else if (tentat >= 10 && letterTry != letterWord) {
+            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "You failed!"
         }
         else if (letterTry == letterWord) {
             textHint.innerHTML = "Right!"
