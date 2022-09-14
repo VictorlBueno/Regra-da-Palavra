@@ -8,13 +8,13 @@ function New() {
     tentat = 0
     var dicas = document.getElementById("dica")
     if (game == 'First') {
-        dicas.innerHTML = 'Easy game'
+        dicas.innerHTML = 'Easy game - Type a word'
     }
     else if (game == 'Contain') {
-        dicas.innerHTML = 'Hard game'
+        dicas.innerHTML = 'Hard game - Type a word'
     }
     else {
-        dicas.innerHTML = 'Medium game'
+        dicas.innerHTML = 'Medium game - Type a word'
     }
 }
 
