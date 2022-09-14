@@ -39,9 +39,11 @@ function Try() {
         var numTry = tries.length
 
         if (tentat >= 10 && numTry == numWord || tentat >= 10 && tries.includes("7")) {
-            dicas.innerHTML = "You won!"
+            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "You won!"
         }
         else if (tentat >= 10 && numTry != numWord) {
+            dicas.innerHTML = "Answer: Word that starts with the capital letter 'A'"
             textHint.innerHTML = "You failed!"
         }
         else if (numTry == numWord || tries.includes("7")) {
