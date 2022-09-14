@@ -8,13 +8,13 @@ function New() {
     tentat = 0
     var dicas = document.getElementById("dica")
     if (game == 'First') {
-        dicas.innerHTML = 'Easy Game<br>First Tip: Against'
+        dicas.innerHTML = 'Easy Game<br>Hint: Absence and Account'
     }
     else if (game == 'Contain') {
-        dicas.innerHTML = 'Hard Game<br>First Tip: Against'
+        dicas.innerHTML = 'Hard Game<br>Hint: Bearing and Arrival'
     }
     else {
-        dicas.innerHTML = 'Medium Game<br>First Tip: Against'
+        dicas.innerHTML = 'Medium Game<br>Hint: Drawing and Account'
     }
 }
 
@@ -30,11 +30,11 @@ function Try() {
         var word = ['Ability', 'Against', 'Banking', 'Excited', 'Website', 'Analyst', 'Caliber', 'Circuit', 'Context', 'Compete'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "Tip: " + words
+        var novaDica = "Hint: " + words
         dicas.innerHTML = novaDica
         
         var tries = document.getElementById("palavra").value
-        var textTip = document.getElementById("texto")
+        var textHint = document.getElementById("texto")
         var numWord = words.length
         var numTry = tries.length
 
@@ -42,13 +42,13 @@ function Try() {
             dicas.innerHTML = "You failed.<br>Answer: Words with 7 letters"
         }
         else if (numTry == numWord) {
-            textTip.innerHTML = "Right!"
+            textHint.innerHTML = "Right!"
         }
         else if (numTry == (numWord - 1) || numTry == (numWord + 1)) {
-            textTip.innerHTML = "You're close.."
+            textHint.innerHTML = "You're close.."
         }
         else {
-            textTip.innerHTML = "Wrong.."
+            textHint.innerHTML = "Wrong.."
         }
     }
 
@@ -62,11 +62,11 @@ function Try() {
         var word = ['Ambulance', 'Amusement', 'Also', 'Affection', 'Animation', 'Affiliate', 'Afternoon'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "Tip: " + words
+        var novaDica = "Hint: " + words
         dicas.innerHTML = novaDica
 
         var tries = document.getElementById("palavra").value
-        var textTip = document.getElementById("texto")
+        var textHint = document.getElementById("texto")
         var firstWord = words.charAt(0)
         var firstTry = tries.charAt(0)
 
@@ -74,10 +74,10 @@ function Try() {
             dicas.innerHTML = "You failed.<br>Answer: Word that starts with the capital letter 'A'"
         }
         else if (firstTry == firstWord) {
-            textTip.innerHTML = "Right!"
+            textHint.innerHTML = "Right!"
         }
         else {
-            textTip.innerHTML = "Wrong.."
+            textHint.innerHTML = "Wrong.."
         }
     }
 
@@ -91,11 +91,11 @@ function Try() {
         var word = ['Incompatibility', 'Hospitalization', "Introduce", "Classification", 'Generalization', 'Nonsignificant', 'Institutional'];
         var words = word[Math.floor(Math.random()*word.length)];
 
-        var novaDica = "Tip: " + words
+        var novaDica = "Hint: " + words
         dicas.innerHTML = novaDica
 
         var tries = document.getElementById("palavra").value
-        var textTip = document.getElementById("texto")
+        var textHint = document.getElementById("texto")
         var letterWord = words.includes("n")
         var letterTry = tries.includes("n")
 
@@ -103,15 +103,15 @@ function Try() {
             dicas.innerHTML = "You failed.<br>Answer: Word with the letter 'n'"
         }
         else if (letterTry == letterWord) {
-            textTip.innerHTML = "Right!"
+            textHint.innerHTML = "Right!"
         }
         else {
-            textTip.innerHTML = "Wrong.."
+            textHint.innerHTML = "Wrong.."
         }
     }
 
     else {
-        var textTip = document.getElementById("texto")
-        textTip.innerHTML = "Click 'New' to start"
+        var textHint = document.getElementById("texto")
+        textHint.innerHTML = "Click 'New' to start"
         }
 }
