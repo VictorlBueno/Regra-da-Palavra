@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #323e55;
+  background-color: rgb(34,46,70);
+  background-color: linear-gradient(159deg, rgba(34,46,70,1) 0%, rgba(63,79,112,1) 40%, rgba(72,83,106,1) 100%);
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   font-family: 'Roboto', sans-serif;
   min-height: 90vh;
