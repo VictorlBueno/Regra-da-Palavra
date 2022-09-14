@@ -92,22 +92,8 @@ body {
 
 li {
   list-style-type: none;
+  margin-bottom: 20px;
   display: inline;
-}
-
-.button {
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  background: rgb(255, 255, 255, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  font-weight: 1em;
-  border-radius: 5px;
-  margin: 5px;
-  color: #e4e6e4;
-  transition: 0.5s;
 }
 
 .try {
@@ -115,8 +101,22 @@ li {
 }
 
 .new {
-  padding: 8px 37px;
-  float:center;
+  padding: 8px 37.1px;
+
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(255, 255, 255, 0.7);
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-weight: 1em;
+  border-radius: 5px;
+  color: #e4e6e4;
+  transition: 0.5s;
 }
 
 .button:hover {
