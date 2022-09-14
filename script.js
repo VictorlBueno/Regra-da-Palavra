@@ -91,7 +91,7 @@ function Try() {
         var letterTry = tries.includes("n")
 
         if (tentat > 10) {
-            dicas.innerHTML = "Word with the letter 'N'"
+            dicas.innerHTML = "Word with the letter 'n'"
         }
         else if (letterTry == letterWord) {
             textTip.innerHTML = "Right!"
