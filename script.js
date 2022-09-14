@@ -41,7 +41,7 @@ function Try() {
         if (tentat > 10) {
             dicas.innerHTML = "You failed.<br>Answer: Words with 7 letters"
         }
-        else if (numTry == numWord) {
+        else if (numTry == numWord || tries.includes("7")) {
             textHint.innerHTML = "Right!"
         }
         else if (numTry == (numWord - 1) || numTry == (numWord + 1)) {
