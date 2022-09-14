@@ -94,10 +94,10 @@ function Try() {
             dicas.innerHTML = "Word with the letter 'N'"
         }
         else if (letterTry == letterWord) {
-            textTip.innerHTML = "Wrong.."
+            textTip.innerHTML = "Right!"
         }
         else {
-            textTip.innerHTML = "Right!"
+            textTip.innerHTML = "Wrong.."
         }
     }
 
