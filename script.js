@@ -40,11 +40,11 @@ function Try() {
 
         if (tentat >= 10 && numTry == numWord || tentat >= 10 && tries.includes("7")) {
             dicas.innerHTML = "You won!"
-            textHint.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "Answer: 7 letter word"
         }
         else if (tentat >= 10 && numTry != numWord) {
             dicas.innerHTML = "You failed!"
-            textHint.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "Answer: 7 letter word"
         }
         else if (numTry == numWord || tries.includes("7")) {
             textHint.innerHTML = "Right!"
@@ -111,11 +111,11 @@ function Try() {
 
         if (tentat >= 10 && letterTry == letterWord) {
             dicas.innerHTML = "You won!"
-            textHint.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "Answer: Word containing the lowercase letter 'n'"
         }
         else if (tentat >= 10 && letterTry != letterWord) {
             dicas.innerHTML = "You failed!"
-            textHint.innerHTML = "Answer: Word that starts with the capital letter 'A'"
+            textHint.innerHTML = "Answer: Word containing the lowercase letter 'n'"
         }
         else if (letterTry == letterWord) {
             textHint.innerHTML = "Right!"
