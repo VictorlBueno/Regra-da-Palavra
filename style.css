@@ -90,6 +90,11 @@ body {
   border: 1px solid #75e44f;
 }
 
+li {
+  list-style-type: none;
+  display: inline;
+}
+
 .button {
   font-family: 'Roboto', sans-serif;
   position: relative;
@@ -102,8 +107,15 @@ body {
   border-radius: 5px;
   margin: 5px;
   color: #e4e6e4;
-  padding: 8px 40px;
   transition: 0.5s;
+}
+
+.try {
+  padding: 8px 40px;
+}
+
+.new {
+  padding: 8px 37px;
 }
 
 .button:hover {
