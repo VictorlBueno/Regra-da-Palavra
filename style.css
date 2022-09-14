@@ -75,7 +75,7 @@ body {
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span {
   background: #75e44f;
-  color: rgb(50, 62, 85);
+  color: rgb(15, 15, 15);
   border-radius: 2px;
 }
 
