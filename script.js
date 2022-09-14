@@ -1,15 +1,26 @@
 var game = ""
+var tentat = 0
 function New() {
     var gameNum = ['First', 'Length', 'Contain']
     game = gameNum[Math.floor(Math.random()*gameNum.length)]
     var dicas = document.getElementById("dica")
     dicas.innerHTML = 'Type a word'
+    tentat = 0
+    var dicas = document.getElementById("dica")
+    if (game == 'First') {
+        dicas.innerHTML = 'Easy game'
+    }
+    else if (game == 'Contain') {
+        dicas.innerHTML = 'Hard game'
+    }
+    else {
+        dicas.innerHTML = 'Medium game'
+    }
 }
 
 function Try() {
     var dicas = document.getElementById("dica")
-    if (game == 'Length') {
-        var tentat = 0
+    if (game == 'Length') {       
         var tent = document.getElementById("tents")
         tentat = tentat + 1
         if (tentat <= 10) {
@@ -28,7 +39,7 @@ function Try() {
         var numTry = tries.length
 
         if (tentat > 10) {
-            dicas.innerHTML = "You failed. The rule is: Words with 7 letters"
+            dicas.innerHTML = "You failed. Answer: The rule is: Words with 7 letters"
         }
         else if (numTry == numWord) {
             textTip.innerHTML = "Right!"
@@ -42,7 +53,6 @@ function Try() {
     }
 
     else if (game == 'First') {
-        var tentat = 0
         var tent = document.getElementById("tents")
         tentat = tentat + 1
         if (tentat <= 10) {
@@ -61,7 +71,7 @@ function Try() {
         var firstTry = tries.charAt(0)
 
         if (tentat > 10) {
-            dicas.innerHTML = "Word starting with the letter 'A'"
+            dicas.innerHTML = "You failed. Answer: Word starting with the letter 'A'"
         }
         else if (firstTry == firstWord) {
             textTip.innerHTML = "Right!"
@@ -72,7 +82,6 @@ function Try() {
     }
 
     else if (game == 'Contain') {
-        var tentat = 0
         var tent = document.getElementById("tents")
         tentat = tentat + 1
         if (tentat <= 10) {
@@ -91,7 +100,7 @@ function Try() {
         var letterTry = tries.includes("n")
 
         if (tentat > 10) {
-            dicas.innerHTML = "Word with the letter 'n'"
+            dicas.innerHTML = "You failed. Answer: Word with the letter 'n'"
         }
         else if (letterTry == letterWord) {
             textTip.innerHTML = "Right!"
