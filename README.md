@@ -5,8 +5,9 @@
 <img src="game.png" width="410" align=right>
 How to play:
 <ul>
- <li>Try to find the pattern among the hint words.</li>
- <li>Write words until you find the same pattern.</li>
+ <li>Find the common pattern among the hint words.</li>
+ <li>Type a word with the same rule pattern.</li>
+ <li>Each attempt shows a new hint with the same pattern.</li>
  <li>Find out before 10 tries and see the answer.</li>
  <li>There are 3 games. Click "New" to play another rule.</li>
 </ul>
