@@ -1,177 +1,147 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  fonnt
 }
 
 body {
-  background-color: #323e55;
-  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
-  font-family: 'Roboto', sans-serif;
-  min-height: 90vh;
+  background-color: #293447;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 25px;
-  flex-direction: column;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.info {
+  display: inline;
 }
 
 .tit {
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-}
-
-.desc {
-  font-size: 0.9em;
-  margin-top: 10px;
+  font-size: 0.8em;
+  margin-right: 5px;
   margin-left: 10px;
-  margin-right: 10px;
-  font-style: italic;
-  font-family: 'Roboto' sans-serif;
-  color: #fff;
 }
 
 .inputBox {
-  position: relative;
-  width: 250px;
-}
-
-.inputBox input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgb(255, 255, 255, 0.7);
-  background: rgb(50, 62, 85);
-  border-radius: 5px;
-  outline: none;
-  color: #fff;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-.inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 1.1em;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span {
-  color: #75e44f;
-  transform: translateX(10px) translateY(-7px);
-  font-size: 0.65em;
-  padding: 0 10px;
-  background: rgb(50, 62, 85);
-  border-left: 1px solid #75e44f;
-  border-right: 1px solid #75e44f;
-  letter-spacing: 0.2em;
-}
-
-.inputBox:nth-child(2) input:valid ~ span,
-.inputBox:nth-child(2) input:focus ~ span {
-  background: #75e44f;
-  color: rgb(15, 15, 15);
-  border-radius: 2px;
-}
-
-.inputBox input:valid,
-.inputBox input:focus {
-  border: 1px solid #75e44f;
-}
-
-li {
-  list-style-type: none;
-  display: inline-flex;
-}
-
-.try {
-  padding: 8px 40px;
-}
-
-.new {
-  padding: 8px 37.1px;
-}
-
-.button {
-  font-family: 'Roboto', sans-serif;
-  background: rgb(255, 255, 255, 0.7);
-  text-decoration: none;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  font-weight: 1em;
-  border-radius: 5px;
-  color: #e4e6e4;
-  transition: 0.5s;
-}
-
-.button:hover {
-  letter-spacing: 0.25em;
-  background: #75e44f;
-  color: #75e44f;
-  box-shadow: 0 0 35px #75e44f;
-}
-
-.button:before {
-  content: '';
-  position: absolute;
-  inset: 2px;
   background: #323e55;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  width: 310px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-.button span {
-  position: relative;
-  z-index: 1;
+.inputBox:valid,
+.inputBox:focus {
+  color: white;
 }
 
-.button i {
-  position: absolute;
-  inset: 0;
-  display: block;
+.send {
+  display: none;
 }
 
-.button i::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 80%;
-  width: 10px;
-  height: 4px;
-  background: rgb(55, 79, 123);
-  transform: translateX(-50%) skewX(324deg);
-  transition: 0.5s;
+.checkCorrect {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  color: #66e870
 }
 
-.button:hover i::before {
-  width: 20px;
-  left: 20%;
+.checkWrong {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  color: #ff5555
 }
 
-.button i::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-  width: 10px;
-  height: 4px;
-  background: rgb(55, 79, 123);
-  transform: translateX(-50%) skewX(324deg);
-  transition: 0.5s;
+.checkTip {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  color: gray;
 }
 
-.button:hover i::after {
-  width: 20px;
-  left: 80%;
+.tip {
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.bot {
+  color: grey;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.last {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.medium {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.big {
+  font-size: 1.2em;
+}
+
+.red {
+  color: #ff5555;
+}
+
+.grn {
+  color: #66e870;
+}
+
+.right {
+  border: 1px solid #66e870;
+}
+
+.dica {
+  border: 1px solid white;
+}
+
+.wrong {
+  border: 1px solid #ff5555;
+}
+
+.howTo {
+  background: #323e55;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 0.9em;
+  width: 300px;
+  line-height: 20px;
+}
+
+.howTo span {
+  color: #909090;
+  font-size: 0.8em;
+}
+
