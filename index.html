@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Word Rule Game by VLB</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <title>Regra da Palavra</title>
   </head>
   <body>
-    <p class="tit" id="dica">Find the word rule</p>
-    <div class="inputBox">
-      <input type="text" required="required" id="palavra" />
-      <span id="tents">Answer</span>
-    </div>
     <div>
-      <ul>
-        <li><a href="#" type="submit" class="button try" onclick="Try()" id="try"><span>Try</span><i></i></a></li>
-        <li><a href="#" type="submit" class="button new" onclick="New()" id="new"><span>New</span><i></i></a></li>
-      </ul>
-    </div>
-    <p id="texto" class="desc">How to play:<br>- Find the common pattern among the hint words.<br>- Type a different word with the same rule pattern.<br>- Each attempt shows a new hint with the same pattern.<br>- Find out before 10 tries and see the answer.<br>- There are 3 games. Click "New" to play another rule.</p>
+      <p class="title">Regra da Palavra<p>
+      <p class="info tit">Dificuldade:</p><p class="info ans" id="jogo">-</p>
+      <p class="info tit">Tentativas:</p><p class="info ans" id="tentativas">-</p>
+      <p class="info tit">Pontos:</p><p class="info ans" id="pts">-</p><br>
+
+      <input type="text" required="required" id="word" class="inputBox" placeholder="digite uma palavra" autocomplete="off">
+      <button type="submit" id="send" value="" class="send" onclick="Send()"></button>
+      
+      <div id="last" class="last"></div>
+      <div id="tipWords" class="tipWords">
+        <div class="howTo">
+          <p><span>Como jogar:</span><br>
+          <p>Descubra o que há em comum entre as palavras em verde e digite palavras com a mesma regra.</p><br>
+          <p><span>Como vencer:</span><br>
+          <p>Para cada tentativa mais uma palavra de dica é mostrada. Descubra antes de 10 tentativas para vencer a rodada.</p><br>
+          <p><span>Exemplos:</span></p>
+          <p>Pato, Palha, Polvo: Palavra iniciadas com P</p>
+          <p>Tênis, Sair, Monitor: Palvras que contém I</p>
+        </div>
+        </div>
+        <p class="bot" id="bot"></p>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+      </div>
   </body>
 </html>
