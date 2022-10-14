@@ -167,7 +167,10 @@ function wrongWord(word, newTip) {
     }   
     if (tentativasTotal == rodadas) {
         last.innerHTML = "<p class='big red'>Você não adivinhou! -5pts</p><p class='medium'> Resposta: " + gameName + "</p>"
-        pontos += -4
+        if (pontos > 10) {
+            pontos += -1
+            pts.innerHTML = pontos
+        }
         novo()
         bot.innerHTML = 'digite qualquer palavra iniciar o próximo jogo'  
     }
