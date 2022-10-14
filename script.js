@@ -177,7 +177,7 @@ function gameInicial(word, dicaPalavra) {
     var primeiraLetraWord = word[0]
     if (tentativasTotal == 1) {
         listaRegra = wordsList.filter(x => x[0] == dicaPalavra[0])
-        gameName = 'Palavras a primeira letra "' + dicaPalavra[0] + '"'
+        gameName = 'Palavras a primeira letra ' + dicaPalavra[0].toUpperCase()
         jogo.innerHTML = "Fácil"
     }
     gameScript(listaRegra, dicaPalavra[0], primeiraLetraWord, word)
@@ -188,7 +188,7 @@ function gameFinal(word, dicaPalavra) {
     var ultimaLetraWord = word.slice(-1)
     if (tentativasTotal == 1) {
         listaRegra = wordsList.filter(x => x.slice(-1) == dicaPalavra.slice(-1))
-        gameName = 'Palavras a última letra "' + dicaPalavra.slice(-1) + '"'
+        gameName = 'Palavras a última letra ' + dicaPalavra.slice(-1).toUpperCase()
         jogo.innerHTML = "Médio"
     }
     gameScript(listaRegra, dicaPalavra.slice(-1), ultimaLetraWord, word)
@@ -229,7 +229,7 @@ function gameContem(word, dicaPalavra) {
     if (tentativasTotal == 1) {
         dicaContem = dicaPalavra[1]
         listaRegra = wordsList.filter(x => x.includes(dicaPalavra[1]))
-        gameName = 'Palavras com ' + dicaPalavra[1] + ' letras'
+        gameName = 'Palavras que contém a letra' + dicaPalavra[1].toUpperCase()
         jogo.innerHTML = "Difícil+"
     }
     var wordContem = word.includes(dicaContem)
