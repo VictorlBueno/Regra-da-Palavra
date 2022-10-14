@@ -1,26 +1,26 @@
-><a href="https://vlb-word-rule-game.netlify.app" target="_blank">See this code running on your web</a></br>
-><a href="https://github.com/stars/VictorlBueno/lists/back-end" target="_blank">See more Back-end codes</a>
+><a href="https://github.com/stars/VictorlBueno/lists/back-end" target="_blank">Ver mais repositórios como este</a></br>
+><a href="https://vlb-word-rule-game.netlify.app" target="_blank">Jogar pela web</a> (Only in Portuguese)
 
-# Word Rule Game 🔠
-<img src="gameimg.png" width="410" align=right>
-How to play:
-<ul>
- <li>Find the common pattern among the hint words.</li>
- <li>Type a word with the same rule pattern.</li>
- <li>Each attempt shows a new hint with the same pattern.</li>
- <li>Find out before 10 tries and see the answer.</li>
- <li>There are 3 games. Click "New" to play another rule.</li>
-</ul>
+# Regra da Palavra 🔠
+<img src="imggame.png" width="410" align=right>
+<h5>Como Jogar:</h5>
+Descubra o que há em comum entre as palavras em verde e digite palavras com a mesma regra.<br>
+<h5>Como vencer:</h5>
+Para cada tentativa mais uma palavra de dica é mostrada. Descubra antes de 10 tentativas para vencer a rodada.<br>
+<h5>Exemplos:</h5>
+Pato, Palha, Polvo: Palavra iniciadas com P<br>
+Tênis, Sair, Monitor: Palvras que contém I
 
-# Languages 👨‍💻
+# Linguagens 👨‍💻
 <ul>
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
 </ul>
   
-# Social Networks 🔗
-<ul>
-<li><a href="https://www.linkedin.com/in/victorlbueno/" target="_blank">VictorlBueno</a> on LinkedIn</li>
-<li><a href="discordapp.com/users/Playsken#1180" target="_blank">Playsken#1180</a> on Discord</li>
-<li><a href="instagram.com/victorlbueno" target="_blank">@VictorlBueno</a> on Instagram</li></ul>
+#
+<h6>Redes Sociaiss&ensp;&ensp;&ensp;&ensp;
+<a href="https://linkedin.com/in/victorlbueno/" target="_blank">LinkedIn</a>&ensp;&ensp;•&ensp;&ensp;
+<a href="https://discordapp.com/users/Playsken#1180" target="_blank">Discord</a>&ensp;&ensp;•&ensp;&ensp;
+<a href="https://www.hackerrank.com/Playsken" target="_blank">HackerRank</a>&ensp;&ensp;•&ensp;&ensp;
+<a href="https://instagram.com/victorlbueno" target="_blank">Instagram</a></h6>
